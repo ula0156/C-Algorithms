@@ -10,28 +10,35 @@ namespace CodeFights
     {
         public static int FindUniqueNumber(int[] a, int stInd, int endInd)
         {
-            if (endInd - stInd < 3)
+            if (stInd == endInd)
             {
-                if (a[stInd] == a[stInd] + 1)
-                {
-                    return a[endInd];
-                } else
-                {
-                    return a[stInd];
-                }
+                return a[stInd];
             }
 
-            int midInd = (int)((stInd + endInd) / 2) + stInd;   // why (int)Math.Floor() - didn't work?????
+            int midInd = (stInd + endInd) / 2; 
 
             if (a[midInd] == a[midInd - 1])
             {
                 // unique number is on the left
-                return FindUniqueNumber(a, stInd, midInd);
-            } else if (a[midInd] == a[midInd + 1])
+                if (((midInd - 1) - stInd) % 2 == 1) {
+                    return FindUniqueNumber(a, stInd, midInd - 2);
+                } else
+                {
+                    return FindUniqueNumber(a, midInd + 1, endInd);
+                }
+            }
+            else if (a[midInd] == a[midInd + 1])
             {
                 // unique number is on the right
-                return FindUniqueNumber(a, midInd, a.Length - 1);
-            } else
+                if ((endInd - (midInd + 1)) % 2 == 1)
+                {
+                    return FindUniqueNumber(a, midInd + 2, a.Length - 1);
+                } else
+                {
+                    return FindUniqueNumber(a, stInd, midInd - 1);
+                }
+            }
+            else
             {
                 // unique number is a at midIn;
                 return a[midInd];

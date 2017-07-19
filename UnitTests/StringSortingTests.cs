@@ -2,10 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CodeFights;
 
-namespace StringSortingTests
+namespace UnitTests 
 {
     [TestClass]
-    public class UnitTest1
+    public class StringSortingTests
     {
         [TestMethod]
         public void TestMethod1()

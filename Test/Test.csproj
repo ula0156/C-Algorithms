@@ -42,8 +42,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CloneLLWithRPAdditionalDS.cs" />
+    <Compile Include="LinkedList\CloneLinkedListWithRandomPointers.cs" />
+    <Compile Include="LinkedList\NodeLinkedList.cs" />
+    <Compile Include="Recusion\MinCommonSubSetString.cs" />
+    <Compile Include="trees\FindMinAndMax.cs" />
+    <Compile Include="Recusion\FindMinDistance.cs" />
+    <Compile Include="trees\IsBinarySearchTree.cs" />
+    <Compile Include="CountPeaks.cs" />
+    <Compile Include="IsPalindrome.cs" />
+    <Compile Include="MSort.cs" />
+    <Compile Include="trees\MinSum.cs" />
+    <Compile Include="trees\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QSort.cs" />
+    <Compile Include="SecondSmallest.cs" />
+    <Compile Include="SplitArrayInto2.cs" />
+    <Compile Include="trees\TreeUtils.cs" />
+    <Compile Include="trees\TryToFindMin.cs" />
+    <Compile Include="trees\TryToFindMinRecusivly.cs" />
+    <Compile Include="LinkedList\LinkedListUtils.cs" />
+    <Compile Include="WithOutParam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -54,5 +74,6 @@
       <Name>CodeFights</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeFights
+namespace Algorithms
 {
     public class MSort
     {
-        public static void Merge(int[] a, int[] left, int[] right) {
+        private static void Merge(int[] a, int[] left, int[] right) {
             int i = 0; // left
             int j = 0; // right
             int k = 0; // main
@@ -33,6 +33,7 @@ namespace CodeFights
                 i++;
                 k++;
             }
+
             while (j < right.Length)
             {
                 a[k] = right[j];

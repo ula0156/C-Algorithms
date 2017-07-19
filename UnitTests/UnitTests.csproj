@@ -38,24 +38,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.1.1.11\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MSTest.TestFramework.1.1.11\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetSecondSmallestNumTests.cs" />
     <Compile Include="QueensTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringPermutationsTest.cs" />
     <Compile Include="FindUniqueTests.cs" />
     <Compile Include="QSortTests.cs" />
     <Compile Include="MSortTests.cs" />
+    <Compile Include="IsPalindromeTests.cs" />
     <Compile Include="StringSortingTests.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FindDupTests.cs" />
+    <Compile Include="CountPeaksTests.cs" />
+    <Compile Include="OutParamTests.cs" />
+    <Compile Include="TreeTests.cs" />
+    <Compile Include="FindMinDistance.cs" />
+    <Compile Include="LinkedListTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -64,6 +68,10 @@
     <ProjectReference Include="..\CodeFights\CodeFights.csproj">
       <Project>{ffa481d9-93a4-46ba-8d06-1578138be381}</Project>
       <Name>CodeFights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test\Test.csproj">
+      <Project>{2327367e-4e92-4f5a-afcd-114ba36f1eec}</Project>
+      <Name>Test</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeFights
+namespace Algorithms
 {
     public class QSort
     {
@@ -16,7 +16,7 @@ namespace CodeFights
             }
             int pivotInd = stInd;
 
-            for (int i = 0; i <= endInd; i++)
+            for (int i = stInd; i < endInd; i++)
             {
                 if (a[pivotInd] > a[i])
                 {
@@ -38,7 +38,7 @@ namespace CodeFights
                 }
             }
 
-            QuickSort(a, stInd, pivotInd - 1);
+            QuickSort(a, stInd, pivotInd);
             QuickSort(a, pivotInd + 1, endInd);
         }
     }

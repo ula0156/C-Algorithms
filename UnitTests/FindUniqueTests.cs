@@ -5,7 +5,7 @@ using CodeFights;
 namespace UnitTests
 {
     [TestClass]
-    public class FindUniqueTests
+    public class GetSecondSmallestTests
     {
         [TestMethod]
         public void TestMethod1()
@@ -16,6 +16,7 @@ namespace UnitTests
             int result = FindUnique.FindUniqueNumber(a, stInd, endInd);
             Assert.AreEqual(result, 2);
         }
+
         [TestMethod]
         public void TestMethod2()
         {
@@ -25,6 +26,7 @@ namespace UnitTests
             int result = FindUnique.FindUniqueNumber(a, stInd, endInd);
             Assert.AreEqual(result, 1);
         }
+
         [TestMethod]
         public void TestMethod3()
         {
@@ -34,15 +36,17 @@ namespace UnitTests
             int result = FindUnique.FindUniqueNumber(a, stInd, endInd);
             Assert.AreEqual(result, 0);
         }
+
         [TestMethod]
         public void TestMethod4()
         {
-            int[] a = { 1, 1, 2, 3, 3, 4, 4, 5 };
+            int[] a = { 1, 1, 3, 3, 4, 4, 5};
             int stInd = 0;
             int endInd = a.Length - 1;
             int result = FindUnique.FindUniqueNumber(a, stInd, endInd);
             Assert.AreEqual(result, 5);
         }
+
         [TestMethod]
         public void TestMethod5()
         {
