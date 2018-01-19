@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetSecondSmallestNumTests.cs" />
+    <Compile Include="MSort.cs" />
     <Compile Include="QueensTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringPermutationsTest.cs" />
@@ -60,6 +61,59 @@
     <Compile Include="TreeTests.cs" />
     <Compile Include="FindMinDistance.cs" />
     <Compile Include="LinkedListTests.cs" />
+    <Compile Include="MatrixTests.cs" />
+    <Compile Include="PhonePadPermutationsTests.cs" />
+    <Compile Include="GetPermutations.cs" />
+    <Compile Include="AreAllUniqueTests.cs" />
+    <Compile Include="ReplaceEmptySpaceTests.cs" />
+    <Compile Include="CompressStringTests.cs" />
+    <Compile Include="IsPalindromPermutationTests.cs" />
+    <Compile Include="OneAwayTests.cs" />
+    <Compile Include="BiggestConsecutiveSumTests.cs" />
+    <Compile Include="CryptTests.cs" />
+    <Compile Include="FindElementInRotatedArrayTests.cs" />
+    <Compile Include="MagicIndexTests.cs" />
+    <Compile Include="QuickSortTests.cs" />
+    <Compile Include="NotAppersTests.cs" />
+    <Compile Include="FirstMissingTests.cs" />
+    <Compile Include="ArrayOfProductsTests.cs" />
+    <Compile Include="SquareRootTests.cs" />
+    <Compile Include="CalendarMeetingsTests.cs" />
+    <Compile Include="FindNumberOfWaysToFormSumTests.cs" />
+    <Compile Include="EvaluateExpressionTests.cs" />
+    <Compile Include="ReverseStackTests.cs" />
+    <Compile Include="BiggestNeighborTests.cs" />
+    <Compile Include="ReplaceDigitsTests.cs" />
+    <Compile Include="LongestIncreasingSubsequenceTests.cs" />
+    <Compile Include="FindIndicesTests.cs" />
+    <Compile Include="DutchFlagTests.cs" />
+    <Compile Include="ReverseWordTests.cs" />
+    <Compile Include="EditDistance_Tests.cs" />
+    <Compile Include="TotalSumTests.cs" />
+    <Compile Include="SimplifyPathTests.cs" />
+    <Compile Include="Amazon1Tests.cs" />
+    <Compile Include="MaxProductOfThreeTests.cs" />
+    <Compile Include="PathWithMinSumTests.cs" />
+    <Compile Include="ReplaceDigit.cs" />
+    <Compile Include="PascalTriangleTests.cs" />
+    <Compile Include="StockWithFeeTests.cs" />
+    <Compile Include="SortStringNumArrayTests.cs" />
+    <Compile Include="SumOf3Tests.cs" />
+    <Compile Include="AtoiTests.cs" />
+    <Compile Include="RotatedStringArrayTests.cs" />
+    <Compile Include="PartitionArrayTests.cs" />
+    <Compile Include="LowestAncestorTests.cs" />
+    <Compile Include="UniqueWaysRobotTests.cs" />
+    <Compile Include="GetMaxSumWithinTheTargetTests.cs" />
+    <Compile Include="KnapsackProblemTests.cs" />
+    <Compile Include="StringOccurancesTests.cs" />
+    <Compile Include="IncreasingPermutationTests.cs" />
+    <Compile Include="GetHeighestRateTests.cs" />
+    <Compile Include="KthPermutTests.cs" />
+    <Compile Include="ReverseInGroupOf3Tests.cs" />
+    <Compile Include="TimeForTasksExecutionTests.cs" />
+    <Compile Include="ConvertBSTToDLLTests.cs" />
+    <Compile Include="GetTotalTimeToExecuteTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -68,6 +122,10 @@
     <ProjectReference Include="..\CodeFights\CodeFights.csproj">
       <Project>{ffa481d9-93a4-46ba-8d06-1578138be381}</Project>
       <Name>CodeFights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreenBook\GreenBook.csproj">
+      <Project>{ba59ac3b-fc4a-4046-9e81-5293a0723758}</Project>
+      <Name>GreenBook</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{2327367e-4e92-4f5a-afcd-114ba36f1eec}</Project>

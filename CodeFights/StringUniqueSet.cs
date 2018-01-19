@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeFights
 {
-    public class StringPermutations
+    public class StringUniqueSet
     {
         public static string[] Permutations(string s)
         {

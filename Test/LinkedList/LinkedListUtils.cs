@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test
+namespace Test.List
 {
     public static class LinkedListUtils
     {
@@ -26,7 +26,7 @@ namespace Test
                 }
             }
 
-            createRandomPointers(head);
+            //createRandomPointers(head);
             return head;
         }
 
@@ -48,5 +48,24 @@ namespace Test
             current.Random = current;
         }
 
+        public static NodeLinkedList CreateLinkedListChar(char[] items)
+        {
+            NodeLinkedList head = null;
+            NodeLinkedList current = null;
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (head == null)
+                {
+                    head = new NodeLinkedList(items[i]);
+                    current = head;
+                }
+                else
+                {
+                    current.Next = new NodeLinkedList(items[i]);
+                    current = current.Next;
+                }
+            }
+            return head;
+        }
     }
 }

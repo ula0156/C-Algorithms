@@ -10,7 +10,7 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod1()
         {
-            string[] result = StringPermutations.Permutations("aab");
+            string[] result = StringUniqueSet.Permutations("aab");
             Assert.AreEqual(3, result.Length);
             CollectionAssert.AreEqual(new string[] { "aab", "aba", "baa" }, result);
         }
@@ -18,7 +18,7 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod2()
         {
-            string[] result = StringPermutations.Permutations("CBA");
+            string[] result = StringUniqueSet.Permutations("CBA");
             CollectionAssert.AreEqual(new string[] { "ABC", "ACB", "BAC", "BCA", "CAB", "CBA"}, result);
         }
     }

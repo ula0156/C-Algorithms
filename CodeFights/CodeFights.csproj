@@ -44,8 +44,11 @@
     <Compile Include="FindUnique.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queens.cs" />
-    <Compile Include="StringPermutations.cs" />
+    <Compile Include="StringUniqueSet.cs" />
     <Compile Include="StringSorting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="String\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
